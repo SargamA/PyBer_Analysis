@@ -3,12 +3,12 @@
 ## The purpose of this analysis was to review and compare number the fare earned by each city type whithin 4 months period. To gather this information, some data clean up and monipulation was required.  
 
 ### First, I had to combine data required for the analysis from 2 different data sources. 
-Secondly, i write below code to get total fare by city by date.
+Secondly, I wrote below code to get total fare by city by date.
 
 Pyber_table_df = pd.pivot(data = Pyber_summary2_df, index=["date"], columns ="type", values="fare")
 Pyber_table_df
 
-### Adding data to plot by each day will not provide clear over view, so then i grouped the dates into weekly bucket.
+### Adding data to plot by each day will not provide clear over view, so then i grouped the dates into weekly buckets and eventually plotted with monthly intervals.
 
 ## Summary Grapy of Total Fares by City Type over 4 months period 
 C:\Users\Aaryan\Desktop\Bootcamp\PyBer_Analysis\analysis
